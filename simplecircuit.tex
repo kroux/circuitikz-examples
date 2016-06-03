@@ -1,0 +1,14 @@
+\documentclass{standalone}
+
+\usepackage[american]{circuitikz}
+
+\begin{document}
+\begin{tikzpicture}
+	\draw
+	(0,0) to [sI, l=v$_i$] (0,2)
+	to [R, l=R] (3,2)
+	to [european resistor, v^<=v$_t$] (3, 0)
+	to [short] (0,0)
+	;
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,15 @@
+\documentclass{standalone}
+
+\usepackage[american]{circuitikz}
+
+\begin{document}
+\begin{tikzpicture}[american voltages]
+	\draw
+	(0,0) to [Do] ++(2,0) coordinate(node1)
+	to [C, l=$C$, *-*] ++(0, -2)
+	(node1) to [short] ++(2,0) to [R, l=$R$, v=$v_{out}$] ++(0, -2)
+	to [short] ++(-4, 0)
+	(0,0) to [open, v_=$v_{in}$, o-o] ++(0, -2)
+	;
+\end{tikzpicture}
+\end{document}
